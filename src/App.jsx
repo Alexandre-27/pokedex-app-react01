@@ -1,29 +1,44 @@
 import PokemonCard from "./components/PokemonCard"
 import { useState } from "react";
+import "./App.css"
 
 const pokemonList = [
   {
-      name: "bulbasaur",
+      name: "Bulbasaur",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+      pv: "Pv: 60",
+      attaque: "Attaque: 90",
+      defense: "Défense: 70",
+      nofind: "(Pokémon capturé)",
     },
     {
-      name: "charmander",
+      name: "Charmander",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+      pv: "Pv: 63",
+      attaque: "Attaque: 96",
+      defense: "Défense: 50",
+      nofind: "(Pokémon capturé)",
     },
     {
-      name: "squirtle",
+      name: "Squirtle",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+        nofind: "(Pokémon aperçu)",
     },
     {
-      name: "pikachu",
+      name: "Pikachu",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+      pv: "Pv: 80",
+      attaque: "Attaque: 110",
+      defense: "Défense: 95",
+      nofind: "(Pokémon capturé)",
     },
     {
-      name: "mew",
+      name: "Mew",
+      nofind: "(Pokémon inconnu)",
     },
   ];
 
@@ -41,6 +56,12 @@ function App() {
 
   return (
     <>
+      <div>
+        <h1>POKEDEX</h1>
+      </div>
+      <div>
+        <p>Bienvenue sur ton Pokedex ! Ici tu retrouveras toutes les informations sur les pokémons que tu as pu croiser ou capturer lors de ton aventure.</p>
+      </div>
       <div>
         <PokemonCard pokemon={pokemon}/>
       </div>
