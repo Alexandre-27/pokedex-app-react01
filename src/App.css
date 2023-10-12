@@ -11,6 +11,32 @@ body {
 
 .bv-pokedex {
   max-width: 70ch;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.nav-style {
+  background-color: rgb(49, 49, 49);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: rgb(139, 138, 138);
+  border-radius: 2rem;
+  border-color: red;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: rgb(200, 200, 200);
+  filter: drop-shadow(0 0 4em #42fb54);
+  border-color: #42fb54;
+  width: 10rem;
 }
 
 .flex-card {
@@ -20,7 +46,39 @@ body {
 }
 
 .card {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  width: 200px;
+  height: 400px;
+  padding: 1.5rem;
+  background-color: rgb(30, 210, 75);
+  border-radius: 5px;
+  border: black solid 1px;
+  box-shadow: 0px 0px 5px gray;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px gray;
+  transition: 
+    width 1.8s,
+    filter 1.8s
+  ;
+}
+  
+.card:hover {
+  filter: drop-shadow(0 0 2em #1c6dbee2);
+  width: 13.5rem;
+}
+  
+.card figcaption {
+  font-size: 1.5rem;
+}
+  
+.card p {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.card-rarity {
+  margin-top: 3rem;
   width: 200px;
   height: 400px;
   padding: 1.5rem;
@@ -38,18 +96,51 @@ body {
   ;
 }
 
-.card:hover {
+.card-rarity:hover {
+  filter: drop-shadow(0 0 2em rgb(30, 210, 75));
+  width: 13.5rem;
+  transform: rotate(-360deg);
+}
+
+.card-rarity figcaption {
+  font-size: 1.5rem;
+}
+  
+.card-rarity p {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.card-legendary {
+  margin-top: 3rem;
+  width: 200px;
+  height: 400px;
+  padding: 1.5rem;
+  background-color: #e9e503;
+  border-radius: 5px;
+  border: black solid 1px;
+  box-shadow: 0px 0px 5px gray;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px gray;
+  transition: 
+    width 1.8s,
+    filter 1.8s,
+    transform 1s
+  ;
+}
+
+.card-legendary:hover {
   filter: drop-shadow(0 0 2em #ff0000e2);
   width: 13.5rem;
   transform: rotateY(-360deg);
 }
 
-
-.card figcaption {
+.card-legendary figcaption {
   font-size: 1.5rem;
 }
-
-.card p {
+  
+.card-legendary p {
   font-size: 1rem;
   color: rgb(0, 0, 0);
 }
@@ -71,16 +162,48 @@ body {
   margin-bottom: 0.73rem;
 }
 
-button {
-  padding: 0.5rem 2rem;
-  background-color: chocolate;
-  border-radius: 2rem;
-  border-color: red;
-  margin: 1rem;
+.legend-color-p {
+  color: black;
+  position: absolute;
+  top: 33rem;
+  width: 15rem;
+  left: 6rem;
 }
 
-button:hover {
-  filter: drop-shadow(0 0 4em #42fb54);
-  border-color: #42fb54;
-  width: 10rem;
+.p-uncommon {
+  background-color: rgb(30, 210, 75);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  z-index: 0;
+  margin-bottom: 1.6rem;
+}
+
+.p-uncommon:hover {
+  filter: drop-shadow(0 0 1em #1c6dbee2);
+  width: 17rem;
+}
+
+.p-rarity {
+  background-color: chocolate;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  transform: rotate(15deg);
+}
+
+.p-rarity:hover {
+  filter: drop-shadow(0 0 1em rgb(30, 210, 75));
+  width: 17rem;
+}
+
+.p-legendary {
+  background-color: #e9e503;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  transform: rotate(-3deg);
+  margin-top: 2.16rem;
+}
+
+.p-legendary:hover {
+  filter: drop-shadow(0 0 1em #ff0000e2);
+  width: 17rem;
 }

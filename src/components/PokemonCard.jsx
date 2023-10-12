@@ -4,7 +4,7 @@ function PokemonCard(props) {
 
     return (
       <section className="flex-card">
-        <figure className="card">{props.pokemon.imgSrc ?(<img className="card-img" src={props.pokemon.imgSrc} 
+        <figure className={props.pokemon.legendary ? "card-legendary" : props.pokemon.rarity ? "card-rarity" : "card"} >{props.pokemon.imgSrc ?(<img className="card-img" src={props.pokemon.imgSrc} 
           alt={props.pokemon.name}/> 
           ) : (
           <p className="card-img card-img-i">???</p>
@@ -41,7 +41,6 @@ PokemonCard.propTypes = {
     attaque : PropTypes.string,
     defense : PropTypes.string,
     nofind : PropTypes.string.isRequired,
-
   }).isRequired,
 }
 
