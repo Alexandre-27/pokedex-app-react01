@@ -60,7 +60,7 @@ function App() {
         <h1>POKEDEX</h1>
       </div>
       <div>
-        <p>Bienvenue sur ton Pokedex ! Ici tu retrouveras toutes les informations sur les pokémons que tu as pu croiser ou capturer lors de ton aventure.</p>
+        <p className="bv-pokedex">Bienvenue sur ton Pokedex ! Ici tu retrouveras toutes les informations sur les pokémons que tu as pu croiser ou capturer lors de ton aventure.</p>
       </div>
       <div>
         <PokemonCard pokemon={pokemon}/>
