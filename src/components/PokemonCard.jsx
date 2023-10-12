@@ -7,7 +7,7 @@ function PokemonCard(props) {
         <figure className="card">{props.pokemon.imgSrc ?(<img className="card-img" src={props.pokemon.imgSrc} 
           alt={props.pokemon.name}/> 
           ) : (
-          <p>???</p>
+          <p className="card-img card-img-i">???</p>
           )}
 
           <figcaption>{props.pokemon.name}</figcaption>
