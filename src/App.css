@@ -36,13 +36,45 @@ button:hover {
   background-color: rgb(200, 200, 200);
   filter: drop-shadow(0 0 4em #42fb54);
   border-color: #42fb54;
-  width: 10rem;
+  width: 9rem;
 }
 
 .flex-card {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-common {
+  margin-top: 3rem;
+  width: 200px;
+  height: 400px;
+  padding: 1.5rem;
+  background-color: #1c6dbee2;
+  border-radius: 5px;
+  border: black solid 1px;
+  box-shadow: 0px 0px 5px gray;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px gray;
+  transition: 
+    width 1.8s,
+    filter 1.8s
+  ;
+}
+  
+.card-common:hover {
+  filter: drop-shadow(0 0 2em #6f8193e2);
+  width: 13.5rem;
+}
+  
+.card-common figcaption {
+  font-size: 1.5rem;
+}
+  
+.card-common p {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
 }
 
 .card {
@@ -111,12 +143,80 @@ button:hover {
   color: rgb(0, 0, 0);
 }
 
+.card-very-rare {
+  margin-top: 3rem;
+  width: 200px;
+  height: 400px;
+  padding: 1.5rem;
+  background-color: rgb(74, 47, 164);
+  border-radius: 5px;
+  border: black solid 1px;
+  box-shadow: 0px 0px 5px gray;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px gray;
+  transition: 
+    width 1.8s,
+    filter 1.8s,
+    transform 1s
+  ;
+}
+
+.card-very-rare:hover {
+  filter: drop-shadow(0 0 2em chocolate);
+  width: 13.5rem;
+  transform: rotate(-360deg);
+}
+
+.card-very-rare figcaption {
+  font-size: 1.5rem;
+}
+  
+.card-very-rare p {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.card-ultra-rare {
+  margin-top: 3rem;
+  width: 200px;
+  height: 400px;
+  padding: 1.5rem;
+  background-color: rgb(222, 22, 0);
+  border-radius: 5px;
+  border: black solid 1px;
+  box-shadow: 0px 0px 5px gray;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 5px gray;
+  transition: 
+    width 1.8s,
+    filter 1.8s,
+    transform 1s
+  ;
+}
+
+.card-ultra-rare:hover {
+  filter: drop-shadow(0 0 2em rgb(74, 47, 164));
+  width: 13.5rem;
+  transform: rotateY(-360deg);
+}
+
+.card-ultra-rare figcaption {
+  font-size: 1.5rem;
+}
+  
+.card-ultra-rare p {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
 .card-legendary {
   margin-top: 3rem;
   width: 200px;
   height: 400px;
   padding: 1.5rem;
-  background-color: #e9e503;
+  background-color: #FFD700;
   border-radius: 5px;
   border: black solid 1px;
   box-shadow: 0px 0px 5px gray;
@@ -170,6 +270,19 @@ button:hover {
   left: 6rem;
 }
 
+.p-common {
+  background-color: #1c6dbee2;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  z-index: 0;
+  margin-bottom: -1rem;
+}
+
+.p-common:hover {
+  filter: drop-shadow(0 0 1em #6f8193e2);
+  width: 17rem;
+}
+
 .p-uncommon {
   background-color: rgb(30, 210, 75);
   border-radius: 0.4rem;
@@ -195,15 +308,64 @@ button:hover {
   width: 17rem;
 }
 
-.p-legendary {
-  background-color: #e9e503;
+.p-very-rare {
+  background-color: rgb(74, 47, 164);
   border-radius: 0.4rem;
   padding: 0.5rem;
   transform: rotate(-3deg);
   margin-top: 2.16rem;
 }
 
+.p-very-rare:hover {
+  filter: drop-shadow(0 0 1em chocolate);
+  width: 17rem;
+}
+
+.p-ultra-rare {
+  background-color: rgb(222, 22, 0);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  transform: rotate(-8deg);
+  margin-top: 2.16rem;
+}
+
+.p-ultra-rare:hover {
+  filter: drop-shadow(0 0 1em rgb(74, 47, 164));
+  width: 17rem;
+}
+
+.p-legendary {
+  background-color: #FFD700;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  transform: rotate(30deg);
+  margin-top: 4.16rem;
+}
+
 .p-legendary:hover {
   filter: drop-shadow(0 0 1em #ff0000e2);
   width: 17rem;
+}
+
+.div-legende {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 31rem;
+  right: 6rem;
+  max-width: 30ch;
+}
+
+.h3-legende {
+  margin-bottom: 1rem;
+}
+
+.p-legende-i {
+  margin-bottom: 3rem;
+}
+
+.p-legende {
+  margin-top: -0rem;
 }

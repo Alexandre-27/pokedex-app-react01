@@ -1,27 +1,18 @@
 import PropTypes from "prop-types";
 
 function NavBar (props) {
+const {pokemonList, setPokemonIndex} = props;
 
     return (
         <nav className="nav-style">
-            <p>Clique sur les boutons pour faire défiler les pokémons de ton pokedex</p>
-            {props.pokemonI > 0 &&
-                <button onClick={props.precedent}>Précédent</button>
-            }
-            {props.pokemonI < props.pokemon.length - 1 &&
-                <button onClick={props.suivant}>Suivant</button>
-            }
+            <p>Clique sur l'un des pokémons disponible dans ton Pokedex pour le voir apparaître avec ses caractéristiques</p>
+            <ul>
+            {pokemonList.map((pokemonL, index) => (
+            <button key={index} onClick={() => setPokemonIndex(index)}>{pokemonL.name}</button>
+            ))}
+            </ul>
         </nav>
     )
-}
-
-NavBar.propTypes = {
-    pokemonI : PropTypes.string.isRequired,
-    precedent : PropTypes.string.isRequired,
-    suivant : PropTypes.string.isRequired,
-    pokemon : PropTypes.shape({
-
-    }).isRequired,
 }
 
 export default NavBar;

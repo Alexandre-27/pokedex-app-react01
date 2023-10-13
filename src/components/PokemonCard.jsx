@@ -4,7 +4,7 @@ function PokemonCard(props) {
 
     return (
       <section className="flex-card">
-        <figure className={props.pokemon.legendary ? "card-legendary" : props.pokemon.rarity ? "card-rarity" : "card"} >{props.pokemon.imgSrc ?(<img className="card-img" src={props.pokemon.imgSrc} 
+        <figure className={props.pokemon.legendary ? "card-legendary" : props.pokemon.ultraRare ? "card-ultra-rare" : props.pokemon.veryRare ? "card-very-rare" : props.pokemon.rarity ? "card-rarity" : props.pokemon.common ? "card-common" : "card"} >{props.pokemon.imgSrc ?(<img className="card-img" src={props.pokemon.imgSrc} 
           alt={props.pokemon.name}/> 
           ) : (
           <p className="card-img card-img-i">???</p>
@@ -31,7 +31,7 @@ function PokemonCard(props) {
 
         </figure>
       </section>
-    )}
+)}
 
 PokemonCard.propTypes = {
   pokemon : PropTypes.shape({
