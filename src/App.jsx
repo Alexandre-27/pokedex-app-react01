@@ -1,7 +1,9 @@
 import PokemonCard from "./components/PokemonCard"
 import NavBar from "./components/NavBar";
-import { useState } from "react";
-import "./App.css"
+import LegendColor from "./components/LegendColor";
+import LegendeText from "./components/LegendeText";
+import { useEffect, useState } from "react";
+import "./css/App.css";
 
 const pokemonList = [
    {
@@ -40,6 +42,7 @@ const pokemonList = [
       defense: "Défense: 95",
       nofind: "(Pokémon capturé)",
       rarity: "Pokémon rare",
+      alert: "",
     },
     {
       name: "Mew",
@@ -186,6 +189,16 @@ const pokemonList = [
 
 function App() {
 
+  useEffect (
+    () => {
+      setTimeout (
+        () => {
+          alert("Salut ! Comment vas-tu dresseur pokémon ?")
+        }, 6000
+      );
+    },[]
+  );
+
   const [pokemonIndex, setPokemonIndex] = useState(0)
 
   const pokemon = pokemonList[pokemonIndex];
@@ -199,32 +212,14 @@ function App() {
       <div>
         <p className="bv-pokedex">Bienvenue sur ton Pokedex ! Ici tu retrouveras toutes les informations sur les pokémons que tu as pu croiser ou capturer lors de ton aventure.</p>
       </div>
-      <div>
-          <NavBar
-          pokemonList={pokemonList}
-          setPokemonIndex={setPokemonIndex}/>
-      </div>
-      <div>
+      <NavBar
+        pokemonList={pokemonList}
+        setPokemonIndex={setPokemonIndex}
+      />
+      <div className="info-pokedex">
+        <LegendColor />
         <PokemonCard pokemon={pokemon}/>
-      </div>
-      <div className="legend-color-p">
-        <p className="p-common">Pokémon commun</p>
-        <p className="p-uncommon">Pokémon peu-commun</p>
-        <p className="p-rarity">Pokémon rare</p>
-        <p className="p-very-rare">Pokémon très-rare</p>
-        <p className="p-ultra-rare">Pokémon ultra-rare</p>
-        <p className="p-legendary">Pokémon légendaire</p>
-      </div>
-      <div className="div-legende">
-        <h3 className="h3-legende">Légende:</h3>
-        <p className="p-legende-i">À noter que les caractéristiques sont réprésentative des capacités maximum que peut atteindre un pokémon.</p>
-        <p className="p-legende">”Pv”: représente la vie du pokémon</p>
-        <p className="p-legende">”Attaque”: représente les dégâts qu'infligent un pokémon</p>
-        <p className="p-legende">”Défense”: représente une soustraction appliquer au nombre de dégâts d'attaques du pokémon avec lequel il combat</p>
-        <p className="p-legende">”Capturé”: représente les pokémons que tu as en ta possession</p>
-        <p className="p-legende">”Aperçu”: représente les pokémons que tu as vue</p>
-        <p className="p-legende">”Inconnu”: représente les pokémons dont tu connais l'existence mais que tu n'as jamais vu</p>
-        <p className="p-legende">”???”: représente le fait que tu n'as pas les informations correspondantes</p>
+        <LegendeText />
       </div>
     </>
   ); 

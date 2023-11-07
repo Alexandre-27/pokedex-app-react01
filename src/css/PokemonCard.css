@@ -1,52 +1,5 @@
-body {
-  margin: 0;
-  background-color: rgb(37, 41, 59);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.bv-pokedex {
-  max-width: 70ch;
-  display: flex;
-  margin: auto;
-  margin-bottom: 4rem;
-}
-
-.nav-style {
-  background-color: rgb(49, 49, 49);
-  padding: 1rem;
-  border-radius: 1rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-button {
-  padding: 0.5rem 2rem;
-  background-color: rgb(139, 138, 138);
-  border-radius: 2rem;
-  border-color: red;
-  margin: 1rem;
-}
-
-button:hover {
-  background-color: rgb(200, 200, 200);
-  filter: drop-shadow(0 0 4em #42fb54);
-  border-color: #42fb54;
-  width: 9rem;
-}
-
-.flex-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .card-common {
-  margin-top: 3rem;
+  margin-left: 5rem;
   width: 200px;
   height: 400px;
   padding: 1.5rem;
@@ -62,23 +15,23 @@ button:hover {
     filter 1.8s
   ;
 }
-  
+    
 .card-common:hover {
   filter: drop-shadow(0 0 2em #6f8193e2);
   width: 13.5rem;
 }
-  
+    
 .card-common figcaption {
   font-size: 1.5rem;
 }
-  
+    
 .card-common p {
   font-size: 1rem;
   color: rgb(0, 0, 0);
 }
-
+  
 .card {
-  margin-top: 3rem;
+  margin-left: 5rem;
   width: 200px;
   height: 400px;
   padding: 1.5rem;
@@ -94,23 +47,23 @@ button:hover {
     filter 1.8s
   ;
 }
-  
+    
 .card:hover {
   filter: drop-shadow(0 0 2em #1c6dbee2);
   width: 13.5rem;
 }
-  
+    
 .card figcaption {
   font-size: 1.5rem;
 }
-  
+    
 .card p {
   font-size: 1rem;
   color: rgb(0, 0, 0);
 }
-
+  
 .card-rarity {
-  margin-top: 3rem;
+  margin-left: 5rem;
   width: 200px;
   height: 400px;
   padding: 1.5rem;
@@ -127,24 +80,24 @@ button:hover {
     transform 1s
   ;
 }
-
+  
 .card-rarity:hover {
   filter: drop-shadow(0 0 2em rgb(30, 210, 75));
   width: 13.5rem;
   transform: rotate(-360deg);
 }
-
+  
 .card-rarity figcaption {
   font-size: 1.5rem;
 }
-  
+    
 .card-rarity p {
   font-size: 1rem;
   color: rgb(0, 0, 0);
 }
-
+  
 .card-very-rare {
-  margin-top: 3rem;
+  margin-left: 5rem;
   width: 200px;
   height: 400px;
   padding: 1.5rem;
@@ -161,24 +114,24 @@ button:hover {
     transform 1s
   ;
 }
-
+  
 .card-very-rare:hover {
   filter: drop-shadow(0 0 2em chocolate);
   width: 13.5rem;
   transform: rotate(-360deg);
 }
-
+  
 .card-very-rare figcaption {
   font-size: 1.5rem;
 }
-  
+    
 .card-very-rare p {
   font-size: 1rem;
   color: rgb(0, 0, 0);
 }
 
 .card-ultra-rare {
-  margin-top: 3rem;
+  margin-left: 5rem;
   width: 200px;
   height: 400px;
   padding: 1.5rem;
@@ -210,9 +163,9 @@ button:hover {
   font-size: 1rem;
   color: rgb(0, 0, 0);
 }
-
+  
 .card-legendary {
-  margin-top: 3rem;
+  margin-left: 5rem;
   width: 200px;
   height: 400px;
   padding: 1.5rem;
@@ -229,143 +182,35 @@ button:hover {
     transform 1s
   ;
 }
-
+  
 .card-legendary:hover {
   filter: drop-shadow(0 0 2em #ff0000e2);
   width: 13.5rem;
   transform: rotateY(-360deg);
 }
-
+  
 .card-legendary figcaption {
   font-size: 1.5rem;
 }
-  
+    
 .card-legendary p {
   font-size: 1rem;
   color: rgb(0, 0, 0);
 }
-
+  
 .card-img {
   width: 100%;
   height: 50%;
   margin-bottom: 0.5rem;
   background-color: white;
   border-radius: inherit;
-  box-shadow: inherit;
+box-shadow: inherit;
 }
-
+  
 .card-img-i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -0rem;
-  margin-bottom: 0.73rem;
-}
-
-.legend-color-p {
-  color: black;
-  position: absolute;
-  top: 33rem;
-  width: 15rem;
-  left: 6rem;
-}
-
-.p-common {
-  background-color: #1c6dbee2;
-  border-radius: 0.4rem;
-  padding: 0.5rem;
-  z-index: 0;
-  margin-bottom: -1rem;
-}
-
-.p-common:hover {
-  filter: drop-shadow(0 0 1em #6f8193e2);
-  width: 17rem;
-}
-
-.p-uncommon {
-  background-color: rgb(30, 210, 75);
-  border-radius: 0.4rem;
-  padding: 0.5rem;
-  z-index: 0;
-  margin-bottom: 1.6rem;
-}
-
-.p-uncommon:hover {
-  filter: drop-shadow(0 0 1em #1c6dbee2);
-  width: 17rem;
-}
-
-.p-rarity {
-  background-color: chocolate;
-  border-radius: 0.4rem;
-  padding: 0.5rem;
-  transform: rotate(15deg);
-}
-
-.p-rarity:hover {
-  filter: drop-shadow(0 0 1em rgb(30, 210, 75));
-  width: 17rem;
-}
-
-.p-very-rare {
-  background-color: rgb(74, 47, 164);
-  border-radius: 0.4rem;
-  padding: 0.5rem;
-  transform: rotate(-3deg);
-  margin-top: 2.16rem;
-}
-
-.p-very-rare:hover {
-  filter: drop-shadow(0 0 1em chocolate);
-  width: 17rem;
-}
-
-.p-ultra-rare {
-  background-color: rgb(222, 22, 0);
-  border-radius: 0.4rem;
-  padding: 0.5rem;
-  transform: rotate(-8deg);
-  margin-top: 2.16rem;
-}
-
-.p-ultra-rare:hover {
-  filter: drop-shadow(0 0 1em rgb(74, 47, 164));
-  width: 17rem;
-}
-
-.p-legendary {
-  background-color: #FFD700;
-  border-radius: 0.4rem;
-  padding: 0.5rem;
-  transform: rotate(30deg);
-  margin-top: 4.16rem;
-}
-
-.p-legendary:hover {
-  filter: drop-shadow(0 0 1em #ff0000e2);
-  width: 17rem;
-}
-
-.div-legende {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 31rem;
-  right: 6rem;
-  max-width: 30ch;
-}
-
-.h3-legende {
-  margin-bottom: 1rem;
-}
-
-.p-legende-i {
-  margin-bottom: 3rem;
-}
-
-.p-legende {
-  margin-top: -0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -0rem;
+    margin-bottom: 0.73rem;
 }

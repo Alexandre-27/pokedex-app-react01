@@ -1,0 +1,84 @@
+.legend-color-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+  
+.p-common {
+    background-color: #1c6dbee2;
+    border-radius: 0.4rem;
+    padding: 0.5rem 3.09rem;
+    z-index: 0;
+    margin-bottom: -1rem;
+}
+  
+.p-common:hover {
+    filter: drop-shadow(0 0 1em #6f8193e2);
+    width: 10rem;
+}
+  
+.p-uncommon {
+    background-color: rgb(30, 210, 75);
+    border-radius: 0.4rem;
+    padding: 0.5rem 2rem;
+    z-index: 0;
+    margin-bottom: 1.6rem;
+}
+  
+.p-uncommon:hover {
+    filter: drop-shadow(0 0 1em #1c6dbee2);
+    width: 12rem;
+}
+  
+.p-rarity {
+    background-color: chocolate;
+    border-radius: 0.4rem;
+    padding: 0.5rem 3.8rem;
+    transform: rotate(15deg);
+}
+  
+.p-rarity:hover {
+    filter: drop-shadow(0 0 1em rgb(30, 210, 75));
+    width: 8rem;
+}
+  
+.p-very-rare {
+    background-color: rgb(74, 47, 164);
+    border-radius: 0.4rem;
+    padding: 0.5rem 3rem;
+    transform: rotate(-3deg);
+    margin-top: 2.16rem;
+}
+  
+  .p-very-rare:hover {
+    filter: drop-shadow(0 0 1em chocolate);
+    width: 10rem;
+}
+  
+.p-ultra-rare {
+    background-color: rgb(222, 22, 0);
+    border-radius: 0.4rem;
+    padding: 0.5rem 2.8rem;
+    transform: rotate(-8deg);
+    margin-top: 2.16rem;
+}
+  
+.p-ultra-rare:hover {
+    filter: drop-shadow(0 0 1em rgb(74, 47, 164));
+    width: 10rem;
+}
+  
+.p-legendary {
+    background-color: #FFD700;
+    border-radius: 0.4rem;
+    padding: 0.5rem 2.8rem;
+    transform: rotate(30deg);
+    margin-top: 4.16rem;
+}
+  
+.p-legendary:hover {
+    filter: drop-shadow(0 0 1em #ff0000e2);
+    width: 11rem;
+}

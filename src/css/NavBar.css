@@ -1,0 +1,22 @@
+.nav-style {
+  background-color: rgb(49, 49, 49);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: rgb(139, 138, 138);
+  border-radius: 2rem;
+  border-color: red;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: rgb(200, 200, 200);
+  filter: drop-shadow(0 0 4em #42fb54);
+  border-color: #42fb54;
+  width: 9rem;
+}

@@ -1,0 +1,19 @@
+.div-legende {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 30ch;
+}
+  
+.h3-legende {
+  margin-bottom: 1rem;
+}
+  
+.p-legende-i {
+  margin-bottom: 3rem;
+}
+  
+.p-legende {
+  margin-top: -0rem;
+}
